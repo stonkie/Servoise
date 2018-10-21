@@ -1,8 +1,8 @@
-FROM microsoft/aspnetcore:2.1-aspnetcore AS base
+FROM microsoft/aspnetcore:latest AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/aspnetcore-build:2.1-aspnetcore AS build
+FROM microsoft/aspnetcore-build:latest AS build
 WORKDIR /src
 COPY Byteauthor.Servoise.sln ./
 COPY Byteauthor.Servoise.Web/Byteauthor.Servoise.Web.csproj Byteauthor.Servoise.Web/
