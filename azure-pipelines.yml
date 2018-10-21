@@ -10,5 +10,5 @@ variables:
   imageName: 'servoiseweb:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) .
+- script: docker build -f Byteauthor.Servoise.Web/Dockerfile -t $(imageName) .
   displayName: 'docker build'
